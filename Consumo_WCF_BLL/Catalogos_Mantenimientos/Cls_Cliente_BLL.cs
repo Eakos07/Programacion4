@@ -54,10 +54,10 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre);
             dtParametros.Rows.Add("@Apellidos", "3", Obj_Cliente_DAL.sApellidos);
             dtParametros.Rows.Add("@Email", "3", Obj_Cliente_DAL.sEmail);
-            dtParametros.Rows.Add("@Id_Tipo_Cliente", "3", Obj_Cliente_DAL.iId_Tipo_Cliente);
-            dtParametros.Rows.Add("@Id_Estado", "3", Obj_Cliente_DAL.iId_Estado);
-            dtParametros.Rows.Add("@Id_Cuenta", "3", Obj_Cliente_DAL.iId_Cuenta);
-            dtParametros.Rows.Add("@Codigo_Pais", "3", Obj_Cliente_DAL.iCodigo_Pais);
+            dtParametros.Rows.Add("@Id_Tipo_Cliente", "1", Obj_Cliente_DAL.iId_Tipo_Cliente);
+            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
+            dtParametros.Rows.Add("@Id_Cuenta", "1", Obj_Cliente_DAL.iId_Cuenta);
+            dtParametros.Rows.Add("@Codigo_Pais", "1", Obj_Cliente_DAL.iCodigo_Pais);
 
             Obj_Servicio.Inserta_DatosSinIdentity("SP_INSERTAR_CLIENTE", dtParametros,
                                                   ref sMsjError);
@@ -86,16 +86,15 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Columns.Add("ValorParametro");
 
             #endregion
-            dtParametros.Rows.Add("@Id_Cliente", "3", Obj_Cliente_DAL.iId_Cliente);
             dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre);
             dtParametros.Rows.Add("@Apellidos", "3", Obj_Cliente_DAL.sApellidos);
             dtParametros.Rows.Add("@Email", "3", Obj_Cliente_DAL.sEmail);
-            dtParametros.Rows.Add("@Id_Tipo_Cliente", "3", Obj_Cliente_DAL.iId_Tipo_Cliente);
-            dtParametros.Rows.Add("@Id_Estado", "3", Obj_Cliente_DAL.iId_Estado);
-            dtParametros.Rows.Add("@Id_Cuenta", "3", Obj_Cliente_DAL.iId_Cuenta);
-            dtParametros.Rows.Add("@Codigo_Pais", "3", Obj_Cliente_DAL.iCodigo_Pais);
+            dtParametros.Rows.Add("@Id_Tipo_Cliente", "1", Obj_Cliente_DAL.iId_Tipo_Cliente);
+            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
+            dtParametros.Rows.Add("@Id_Cuenta", "1", Obj_Cliente_DAL.iId_Cuenta);
+            dtParametros.Rows.Add("@Codigo_Pais", "1", Obj_Cliente_DAL.iCodigo_Pais);
 
-            Obj_Servicio.Inserta_DatosSinIdentity("SP_MODIFICAR_CLIENTE", dtParametros,
+            Obj_Servicio.Modifica_Datos("SP_MODIFICAR_CLIENTE", dtParametros,
                                                   ref sMsjError);
 
             if (sMsjError == string.Empty)
@@ -123,15 +122,8 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
 
             #endregion
             dtParametros.Rows.Add("@Id_Cliente", "3", Obj_Cliente_DAL.iId_Cliente);
-            dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre);
-            dtParametros.Rows.Add("@Apellidos", "3", Obj_Cliente_DAL.sApellidos);
-            dtParametros.Rows.Add("@Email", "3", Obj_Cliente_DAL.sEmail);
-            dtParametros.Rows.Add("@Id_Tipo_Cliente", "3", Obj_Cliente_DAL.iId_Tipo_Cliente);
-            dtParametros.Rows.Add("@Id_Estado", "3", Obj_Cliente_DAL.iId_Estado);
-            dtParametros.Rows.Add("@Id_Cuenta", "3", Obj_Cliente_DAL.iId_Cuenta);
-            dtParametros.Rows.Add("@Codigo_Pais", "3", Obj_Cliente_DAL.iCodigo_Pais);
 
-            Obj_Servicio.Inserta_DatosSinIdentity("SP_INSERTAR_CLIENTE", dtParametros,
+            Obj_Servicio.Elimina_Datos("SP_ELIMINAR_CLIENTE", dtParametros,
                                                   ref sMsjError);
 
             if (sMsjError == string.Empty)
@@ -143,7 +135,6 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
                 return false;
             }
         }
-
 
     }
 }

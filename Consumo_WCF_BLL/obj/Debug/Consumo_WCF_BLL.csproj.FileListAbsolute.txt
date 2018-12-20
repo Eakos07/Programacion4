@@ -1,1 +1,8 @@
+C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_BLL\bin\Debug\Consumo_WCF_BLL.dll.config
+C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_BLL\bin\Debug\Consumo_WCF_BLL.dll
+C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_BLL\bin\Debug\Consumo_WCF_BLL.pdb
+C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_BLL\bin\Debug\Consumo_WCF_DAL.dll
+C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_BLL\bin\Debug\Consumo_WCF_DAL.pdb
 C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_BLL\obj\Debug\Consumo_WCF_BLL.csprojResolveAssemblyReference.cache
+C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_BLL\obj\Debug\Consumo_WCF_BLL.dll
+C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_BLL\obj\Debug\Consumo_WCF_BLL.pdb

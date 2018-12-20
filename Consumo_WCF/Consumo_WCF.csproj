@@ -473,6 +473,16 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\SVC\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Consumo_WCF_BLL\Consumo_WCF_BLL.csproj">
+      <Project>{650f1122-7ea7-4fcf-bfca-12453fd0837a}</Project>
+      <Name>Consumo_WCF_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Consumo_WCF_DAL\Consumo_WCF_DAL.csproj">
+      <Project>{6d5be6eb-a38a-4a4f-9f47-b8b1c846fd69}</Project>
+      <Name>Consumo_WCF_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
