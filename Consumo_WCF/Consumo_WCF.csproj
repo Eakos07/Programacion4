@@ -48,6 +48,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -107,6 +109,35 @@
     <Content Include="RECURSOS\FORMULARIOS\VISITA\REGISTRO.aspx" />
     <Content Include="RECURSOS\FORMULARIOS\VISITA\VISITA.Master" />
     <Content Include="RECURSOS\FORMULARIOS\EMPLEADO\EMPLEADO.Master" />
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\SVC\BD.wsdl" />
+    <None Include="Service References\SVC\BD.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SVC\BD1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SVC\BD2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\SVC\Consumo_WCF.SVC.Elimina_DatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SVC\Consumo_WCF.SVC.FiltrarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SVC\Consumo_WCF.SVC.InsertaDatosConIdentityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SVC\Consumo_WCF.SVC.Inserta_DatosSinIdentityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SVC\Consumo_WCF.SVC.ListarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SVC\Consumo_WCF.SVC.Modifica_DatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -130,6 +161,12 @@
     <Content Include="RECURSOS\IMAGENES\Slider_3.PNG" />
     <Content Include="RECURSOS\IMAGENES\Slider_4.png" />
     <Content Include="RECURSOS\IMAGENES\Team.png" />
+    <None Include="Service References\SVC\configuration91.svcinfo" />
+    <None Include="Service References\SVC\configuration.svcinfo" />
+    <None Include="Service References\SVC\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -417,6 +454,11 @@
     <Compile Include="RECURSOS\FORMULARIOS\VISITA\VISITA.Master.designer.cs">
       <DependentUpon>VISITA.Master</DependentUpon>
     </Compile>
+    <Compile Include="Service References\SVC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -424,6 +466,12 @@
     <Folder Include="js\" />
     <Folder Include="Models\" />
     <Folder Include="RECURSOS\FORMULARIOS\CLIENTE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SVC\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
