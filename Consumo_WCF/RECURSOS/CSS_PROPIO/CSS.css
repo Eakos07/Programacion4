@@ -1,0 +1,43 @@
+﻿html {
+    margin:0px;
+    padding:0px;
+    font-family:'Bell MT';
+}
+.boxlogin{
+    margin:5% auto;
+    width:300px;
+}
+
+.boxRegistro{
+    margin:2% auto;
+    width:300px;
+}
+
+.boton{
+    background-color:rgb(240, 230, 0);
+    width:100%;
+}
+
+.btn-mantenimientos {
+    margin: 1% auto;
+    background: rgb(6, 138, 247);
+    color:white;
+    width:100%;
+    height:100%;
+}
+
+    .btn-mantenimientos:hover {
+        background:rgb(255,255,255);
+        color:rgb(6, 138, 247);
+        box-shadow: inset 0 0 0 3px rgb(6, 138, 247);
+    }
+.boxForm {
+    margin:2% auto;
+    width:400px;
+}
+
+.myimage {
+  width: 85px;
+  height: 30px;
+  background: white url(../IMAGENES/Logo.png) no-repeat;
+}
