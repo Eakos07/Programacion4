@@ -18,7 +18,7 @@
                 </div>
                 <hr />
                 <div class="form-group">
-                    <asp:Button ID="btn_buscar" class="btn boton" Text="Ver todos" runat="server"/>
+                    <asp:Button ID="btn_buscar" class="btn boton" Text="Ver todos" runat="server" OnClick="btn_buscar_Click"/>
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 bg-light">

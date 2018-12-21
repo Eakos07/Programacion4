@@ -34,5 +34,9 @@ namespace Consumo_WCF.RECURSOS.FORMULARIOS.EMPLEADO
             }
         }
 
+        protected void btn_buscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

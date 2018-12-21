@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Catalogos_Mantenimientos\Cls_Cliente_BLL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Estados_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Inventario_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Proveedor_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Rol_BLL.cs" />

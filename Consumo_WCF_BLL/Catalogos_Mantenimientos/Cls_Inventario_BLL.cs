@@ -35,7 +35,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Insertar(string sFiltro, Cls_Inventario_DAL Obj_Cliente_DAL, ref string sMsjError)
+        public bool Insertar(string sFiltro, Cls_Inventario_DAL Obj_Inventario_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -49,11 +49,11 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Columns.Add("ValorParametro");
 
             #endregion
-            dtParametros.Rows.Add("@Id_Inventario", "1", Obj_Cliente_DAL.iId_Inventario);
-            dtParametros.Rows.Add("@Nombre_Inventario", "3", Obj_Cliente_DAL.sNombre_Inventario);
-            dtParametros.Rows.Add("@Cantidad", "3", Obj_Cliente_DAL.iCantidad);
-            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
-            dtParametros.Rows.Add("@Id_Empleado", "1", Obj_Cliente_DAL.iId_Empleado);
+            dtParametros.Rows.Add("@Id_Inventario", "1", Obj_Inventario_DAL.iId_Inventario);
+            dtParametros.Rows.Add("@Nombre_Inventario", "3", Obj_Inventario_DAL.sNombre_Inventario);
+            dtParametros.Rows.Add("@Cantidad", "3", Obj_Inventario_DAL.iCantidad);
+            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Inventario_DAL.iId_Estado);
+            dtParametros.Rows.Add("@Id_Empleado", "1", Obj_Inventario_DAL.iId_Empleado);
 
             Obj_Servicio.Inserta_DatosSinIdentity("SP_INSERTAR_INVENTARIO", dtParametros,
                                                   ref sMsjError);
@@ -68,7 +68,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Modificar(string sFiltro, Cls_Inventario_DAL Obj_Cliente_DAL, ref string sMsjError)
+        public bool Modificar(string sFiltro, Cls_Inventario_DAL Obj_Inventario_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -83,11 +83,11 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
 
             #endregion
 
-            dtParametros.Rows.Add("@Id_Inventario", "1", Obj_Cliente_DAL.iId_Inventario);
-            dtParametros.Rows.Add("@Nombre_Inventario", "3", Obj_Cliente_DAL.sNombre_Inventario);
-            dtParametros.Rows.Add("@Cantidad", "3", Obj_Cliente_DAL.iCantidad);
-            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
-            dtParametros.Rows.Add("@Id_Empleado", "1", Obj_Cliente_DAL.iId_Empleado);
+            dtParametros.Rows.Add("@Id_Inventario", "1", Obj_Inventario_DAL.iId_Inventario);
+            dtParametros.Rows.Add("@Nombre_Inventario", "3", Obj_Inventario_DAL.sNombre_Inventario);
+            dtParametros.Rows.Add("@Cantidad", "3", Obj_Inventario_DAL.iCantidad);
+            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Inventario_DAL.iId_Estado);
+            dtParametros.Rows.Add("@Id_Empleado", "1", Obj_Inventario_DAL.iId_Empleado);
 
 
             Obj_Servicio.Modifica_Datos("SP_MODIFICAR_INVENTARIO", dtParametros,
@@ -103,7 +103,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Eliminar(string sFiltro, Cls_Inventario_DAL Obj_Cliente_DAL, ref string sMsjError)
+        public bool Eliminar(string sFiltro, Cls_Inventario_DAL Obj_Inventario_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -117,7 +117,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Columns.Add("ValorParametro");
 
             #endregion
-            dtParametros.Rows.Add("@Id_Inventario", "1", Obj_Cliente_DAL.iId_Inventario);
+            dtParametros.Rows.Add("@Id_Inventario", "1", Obj_Inventario_DAL.iId_Inventario);
 
             Obj_Servicio.Elimina_Datos("SP_ELIMINAR_INVENTARIO", dtParametros,
                                                   ref sMsjError);

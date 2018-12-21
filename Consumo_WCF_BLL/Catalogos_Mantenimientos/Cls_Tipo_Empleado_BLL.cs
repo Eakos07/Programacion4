@@ -35,7 +35,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Insertar(string sFiltro, Cls_Tipo_Empleado_DAL Obj_Cliente_DAL, ref string sMsjError)
+        public bool Insertar(string sFiltro, Cls_Tipo_Empleado_DAL Obj_Tipo_Empleado_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -49,10 +49,10 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Columns.Add("ValorParametro");
 
             #endregion
-            dtParametros.Rows.Add("@Id_Tipo_Empleado", "1", Obj_Cliente_DAL.iId_Tipo_Empleado);
-            dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre);
-            dtParametros.Rows.Add("@Descripcion", "3", Obj_Cliente_DAL.sDescripcion);
-            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
+            dtParametros.Rows.Add("@Id_Tipo_Empleado", "1", Obj_Tipo_Empleado_DAL.iId_Tipo_Empleado);
+            dtParametros.Rows.Add("@Nombre", "3", Obj_Tipo_Empleado_DAL.sNombre);
+            dtParametros.Rows.Add("@Descripcion", "3", Obj_Tipo_Empleado_DAL.sDescripcion);
+            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Tipo_Empleado_DAL.iId_Estado);
             
             Obj_Servicio.Inserta_DatosSinIdentity("SP_INSERTAR_TIPO_EMPLEADO", dtParametros,
                                                   ref sMsjError);
@@ -67,7 +67,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Modificar(string sFiltro, Cls_Tipo_Empleado_DAL Obj_Cliente_DAL, ref string sMsjError)
+        public bool Modificar(string sFiltro, Cls_Tipo_Empleado_DAL Obj_Tipo_Empleado_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -82,10 +82,10 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
 
             #endregion
 
-            dtParametros.Rows.Add("@Id_Tipo_Empleado", "1", Obj_Cliente_DAL.iId_Tipo_Empleado);
-            dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre);
-            dtParametros.Rows.Add("@Descripcion", "3", Obj_Cliente_DAL.sDescripcion);
-            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
+            dtParametros.Rows.Add("@Id_Tipo_Empleado", "1", Obj_Tipo_Empleado_DAL.iId_Tipo_Empleado);
+            dtParametros.Rows.Add("@Nombre", "3", Obj_Tipo_Empleado_DAL.sNombre);
+            dtParametros.Rows.Add("@Descripcion", "3", Obj_Tipo_Empleado_DAL.sDescripcion);
+            dtParametros.Rows.Add("@Id_Estado", "1", Obj_Tipo_Empleado_DAL.iId_Estado);
 
             Obj_Servicio.Modifica_Datos("SP_MODIFICAR_TIPO_EMPLEADO", dtParametros,
                                                   ref sMsjError);
@@ -100,7 +100,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Eliminar(string sFiltro, Cls_Tipo_Empleado_DAL Obj_Cliente_DAL, ref string sMsjError)
+        public bool Eliminar(string sFiltro, Cls_Tipo_Empleado_DAL Obj_Tipo_Empleado_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -114,7 +114,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Columns.Add("ValorParametro");
 
             #endregion
-            dtParametros.Rows.Add("@Id_Tipo_Empleado", "1", Obj_Cliente_DAL.iId_Tipo_Empleado);
+            dtParametros.Rows.Add("@Id_Tipo_Empleado", "1", Obj_Tipo_Empleado_DAL.iId_Tipo_Empleado);
 
             Obj_Servicio.Elimina_Datos("SP_ELIMINAR_TIPO_EMPLEADO", dtParametros,
                                                   ref sMsjError);
