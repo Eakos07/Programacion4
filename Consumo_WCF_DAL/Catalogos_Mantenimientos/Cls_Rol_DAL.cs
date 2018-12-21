@@ -6,21 +6,34 @@ using System.Threading.Tasks;
 
 namespace Consumo_WCF_DAL.Catalogos_Mantenimientos
 {
-    public class Cls_Proveedor_DAL
+    public class Cls_Rol_DAL
     {
-        private string _sNombre_Proveedor, _sDescripcion;
-        private int _iId_Proveedor, _iId_Estado;
+        private int _iId_Rol, _iId_Estado;
+        private string _sNombre, _sDescripcion;
 
-        public string sNombre_Proveedor
+        public int iId_Estado
         {
             get
             {
-                return _sNombre_Proveedor;
+                return _iId_Estado;
             }
 
             set
             {
-                _sNombre_Proveedor = value;
+                _iId_Estado = value;
+            }
+        }
+
+        public int iId_Rol
+        {
+            get
+            {
+                return _iId_Rol;
+            }
+
+            set
+            {
+                _iId_Rol = value;
             }
         }
 
@@ -37,29 +50,16 @@ namespace Consumo_WCF_DAL.Catalogos_Mantenimientos
             }
         }
 
-        public int iId_Proveedor
+        public string sNombre
         {
             get
             {
-                return _iId_Proveedor;
+                return _sNombre;
             }
 
             set
             {
-                _iId_Proveedor = value;
-            }
-        }
-
-        public int iId_Estado
-        {
-            get
-            {
-                return _iId_Estado;
-            }
-
-            set
-            {
-                _iId_Estado = value;
+                _sNombre = value;
             }
         }
     }

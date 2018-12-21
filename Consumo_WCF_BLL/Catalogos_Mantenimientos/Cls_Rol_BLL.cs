@@ -8,7 +8,7 @@ using System.Data;
 
 namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
 {
-    public class Cls_Proveedor_BLL
+    public class Cls_Rol_BLL
     {
         public DataTable Listar(string sfiltro, ref string smsError)
         {
@@ -17,12 +17,12 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
 
             if (sfiltro.Trim() != string.Empty)
             {
-                DT = Obj_Servicio.FiltrarDatos("SP_FILTRAR_PROVEEDOR", "@Nombre_Proveedor",
+                DT = Obj_Servicio.FiltrarDatos("SP_FILTRAR_ROL", "@Nombre",
                     SqlDbType.NVarChar, sfiltro.Trim(), ref smsError);
             }
             else
             {
-                DT = Obj_Servicio.ListarDatos("SP_FILTRAR_PROVEEDOR", ref smsError);
+                DT = Obj_Servicio.ListarDatos("SP_FILTRAR_ROL", ref smsError);
             }
 
             if (smsError == string.Empty)
@@ -35,7 +35,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Insertar(string sFiltro, Cls_Proveedor_DAL Obj_Cliente_DAL, ref string sMsjError)
+        public bool Insertar(string sFiltro, Cls_Rol_DAL Obj_Cliente_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -49,12 +49,12 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Columns.Add("ValorParametro");
 
             #endregion
-            dtParametros.Rows.Add("@Id_Proveedor", "1", Obj_Cliente_DAL.iId_Proveedor);
-            dtParametros.Rows.Add("@Nombre_Proveedor", "3", Obj_Cliente_DAL.sNombre_Proveedor);
-            dtParametros.Rows.Add("@Descripcion", "3", Obj_Cliente_DAL.sNombre_Proveedor);
+            dtParametros.Rows.Add("@Id_Rol", "1", Obj_Cliente_DAL.iId_Rol);
+            dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre);
+            dtParametros.Rows.Add("@Descripcion", "3", Obj_Cliente_DAL.sDescripcion);
             dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
 
-            Obj_Servicio.Inserta_DatosSinIdentity("SP_INSERTAR_PROVEEDOR", dtParametros,
+            Obj_Servicio.Inserta_DatosSinIdentity("SP_INSERTAR_ROL", dtParametros,
                                                   ref sMsjError);
 
             if (sMsjError == string.Empty)
@@ -67,7 +67,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Modificar(string sFiltro, Cls_Proveedor_DAL Obj_Cliente_DAL, ref string sMsjError)
+        public bool Modificar(string sFiltro, Cls_Rol_DAL Obj_Cliente_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -82,12 +82,12 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
 
             #endregion
 
-            dtParametros.Rows.Add("@Id_Proveedor", "1", Obj_Cliente_DAL.iId_Proveedor);
-            dtParametros.Rows.Add("@Nombre_Proveedor", "3", Obj_Cliente_DAL.sNombre_Proveedor);
-            dtParametros.Rows.Add("@Descripcion", "3", Obj_Cliente_DAL.sNombre_Proveedor);
+            dtParametros.Rows.Add("@Id_Rol", "1", Obj_Cliente_DAL.iId_Rol);
+            dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre);
+            dtParametros.Rows.Add("@Descripcion", "3", Obj_Cliente_DAL.sDescripcion);
             dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
 
-            Obj_Servicio.Modifica_Datos("SP_MODIFICAR_PROVEEDOR", dtParametros,
+            Obj_Servicio.Modifica_Datos("SP_MODIFICAR_ROL", dtParametros,
                                                   ref sMsjError);
 
             if (sMsjError == string.Empty)
@@ -100,7 +100,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Eliminar(string sFiltro, Cls_Proveedor_DAL Obj_Cliente_DAL, ref string sMsjError)
+        public bool Eliminar(string sFiltro, Cls_Rol_DAL Obj_Cliente_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -114,9 +114,9 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Columns.Add("ValorParametro");
 
             #endregion
-            dtParametros.Rows.Add("@Id_Proveedor", "1", Obj_Cliente_DAL.iId_Proveedor);
+            dtParametros.Rows.Add("@Id_Rol", "1", Obj_Cliente_DAL.iId_Rol);
 
-            Obj_Servicio.Elimina_Datos("SP_ELIMINAR_PROVEEDOR", dtParametros,
+            Obj_Servicio.Elimina_Datos("SP_ELIMINAR_ROL", dtParametros,
                                                   ref sMsjError);
 
             if (sMsjError == string.Empty)

@@ -50,7 +50,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
 
             #endregion
             dtParametros.Rows.Add("@Id_Tipo_Empleado", "1", Obj_Cliente_DAL.iId_Tipo_Pago);
-            dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre_Tipo_Pago);
+            dtParametros.Rows.Add("@Nombre_Tipo_Pago", "3", Obj_Cliente_DAL.sNombre_Tipo_Pago);
             dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
 
             Obj_Servicio.Inserta_DatosSinIdentity("SP_INSERTAR_TIPO_PAGO", dtParametros,
@@ -82,7 +82,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             #endregion
 
             dtParametros.Rows.Add("@Id_Tipo_Empleado", "1", Obj_Cliente_DAL.iId_Tipo_Pago);
-            dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre_Tipo_Pago);
+            dtParametros.Rows.Add("@Nombre_Tipo_Pago", "3", Obj_Cliente_DAL.sNombre_Tipo_Pago);
             dtParametros.Rows.Add("@Id_Estado", "1", Obj_Cliente_DAL.iId_Estado);
 
             Obj_Servicio.Modifica_Datos("SP_MODIFICAR_TIPO_PAGO", dtParametros,
