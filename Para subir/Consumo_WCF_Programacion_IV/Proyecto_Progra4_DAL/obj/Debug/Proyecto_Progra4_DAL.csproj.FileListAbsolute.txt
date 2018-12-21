@@ -1,0 +1,5 @@
+C:\Users\Jorge\Desktop\Consumo_WCF_Programacion_IV\Proyecto_Progra4_DAL\bin\Debug\Proyecto_Progra4_DAL.dll
+C:\Users\Jorge\Desktop\Consumo_WCF_Programacion_IV\Proyecto_Progra4_DAL\bin\Debug\Proyecto_Progra4_DAL.pdb
+C:\Users\Jorge\Desktop\Consumo_WCF_Programacion_IV\Proyecto_Progra4_DAL\obj\Debug\Proyecto_Progra4_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Jorge\Desktop\Consumo_WCF_Programacion_IV\Proyecto_Progra4_DAL\obj\Debug\Proyecto_Progra4_DAL.dll
+C:\Users\Jorge\Desktop\Consumo_WCF_Programacion_IV\Proyecto_Progra4_DAL\obj\Debug\Proyecto_Progra4_DAL.pdb

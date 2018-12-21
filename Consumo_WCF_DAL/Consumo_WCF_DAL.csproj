@@ -41,6 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Catalogos_Mantenimientos\Cls_Cliente_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Inventario_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Proveedor_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Tipo_Empleado_DAL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Tipo_Pago_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

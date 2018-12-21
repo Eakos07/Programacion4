@@ -2,3 +2,8 @@ C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_DAL\b
 C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_DAL\bin\Debug\Consumo_WCF_DAL.pdb
 C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_DAL\obj\Debug\Consumo_WCF_DAL.dll
 C:\Users\Jorge\Desktop\Proyecto P4\Consumo_WCF_Programacion_IV\Consumo_WCF_DAL\obj\Debug\Consumo_WCF_DAL.pdb
+C:\Users\usuario\Desktop\Proyecto_Progra4\Consumo_WCF_DAL\bin\Debug\Consumo_WCF_DAL.dll
+C:\Users\usuario\Desktop\Proyecto_Progra4\Consumo_WCF_DAL\bin\Debug\Consumo_WCF_DAL.pdb
+C:\Users\usuario\Desktop\Proyecto_Progra4\Consumo_WCF_DAL\obj\Debug\Consumo_WCF_DAL.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Proyecto_Progra4\Consumo_WCF_DAL\obj\Debug\Consumo_WCF_DAL.dll
+C:\Users\usuario\Desktop\Proyecto_Progra4\Consumo_WCF_DAL\obj\Debug\Consumo_WCF_DAL.pdb

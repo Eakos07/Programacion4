@@ -50,7 +50,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Columns.Add("ValorParametro");
 
             #endregion
-            dtParametros.Rows.Add("@Id_Cliente", "3", Obj_Cliente_DAL.iId_Cliente);
+            dtParametros.Rows.Add("@Id_Cliente", "1", Obj_Cliente_DAL.iId_Cliente);
             dtParametros.Rows.Add("@Nombre", "3", Obj_Cliente_DAL.sNombre);
             dtParametros.Rows.Add("@Apellidos", "3", Obj_Cliente_DAL.sApellidos);
             dtParametros.Rows.Add("@Email", "3", Obj_Cliente_DAL.sEmail);
@@ -121,7 +121,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Columns.Add("ValorParametro");
 
             #endregion
-            dtParametros.Rows.Add("@Id_Cliente", "3", Obj_Cliente_DAL.iId_Cliente);
+            dtParametros.Rows.Add("@Id_Cliente", "1", Obj_Cliente_DAL.iId_Cliente);
 
             Obj_Servicio.Elimina_Datos("SP_ELIMINAR_CLIENTE", dtParametros,
                                                   ref sMsjError);
