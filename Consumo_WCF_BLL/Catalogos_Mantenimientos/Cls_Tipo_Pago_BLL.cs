@@ -21,8 +21,8 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
                     SqlDbType.NVarChar, sfiltro.Trim(), ref smsError);
             }
             else
-            {
-                DT = Obj_Servicio.ListarDatos("SP_FILTRAR_TIPO_PAGO", ref smsError);
+            { 
+                DT = Obj_Servicio.ListarDatos("SP_LISTAR_TIPO_PAGO", ref smsError);
             }
 
             if (smsError == string.Empty)

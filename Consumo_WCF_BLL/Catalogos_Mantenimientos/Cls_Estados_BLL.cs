@@ -21,7 +21,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
             else
             {
-                DT = Obj_Servicio.ListarDatos("SP_FILTRAR_ESTADO", ref smsError);
+                DT = Obj_Servicio.ListarDatos("SP_LISTAR_ESTADO", ref smsError);
             }
 
             if (smsError == string.Empty)

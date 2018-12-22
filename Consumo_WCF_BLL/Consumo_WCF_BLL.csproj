@@ -42,11 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Catalogos_Mantenimientos\Cls_Articulo_BLL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Categoria_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Cliente_BLL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Departamento_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Estados_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Inventario_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Proveedor_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Rol_BLL.cs" />
+    <Compile Include="Catalogos_Mantenimientos\Cls_Tipo_Cliente_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Tipo_Empleado_BLL.cs" />
     <Compile Include="Catalogos_Mantenimientos\Cls_Tipo_Pago_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

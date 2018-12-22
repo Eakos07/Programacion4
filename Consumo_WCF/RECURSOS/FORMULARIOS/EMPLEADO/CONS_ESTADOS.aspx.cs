@@ -5,34 +5,33 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Consumo_WCF_DAL.Catalogos_Mantenimientos;
+using Consumo_WCF_BLL.Catalogos_Mantenimientos;
 using System.Data;
 
 namespace Consumo_WCF.RECURSOS.FORMULARIOS.EMPLEADO
 {
     public partial class CONS_ESTADOS : System.Web.UI.Page
     {
+        Cls_Estados_BLL ObjBLL = new Cls_Estados_BLL();
+        Cls_Estados_DAL ObjDAL = new Cls_Estados_DAL();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-            SVC.BDClient ObjServicio = new SVC.BDClient();
-            string sMsjError = String.Empty;
-
-            DataTable DT = ObjServicio.ListarDatos("SP_LISTAR_ESTADO", ref sMsjError);
-
-            if (sMsjError != string.Empty)
-            {
-                gvw_estados.DataSource = null;
-            }
-
-            else
-            {
-                gvw_estados.DataSource = DT;
-            }
+            
         }
 
         protected void btn_filtrar_Click(object sender, EventArgs e)
         {
-           
+            
         }
-        
+
+        protected void btn_buscar_Click(object sender, EventArgs e)
+        {
+            string sMsjError = string.Empty;
+
+            gvw_estados.DataSource = ObjBLL.Listar(txt_id_estado.Text, ref sMsjError);
+            gvw_estados.DataBind();
+
+        }
     }
 }

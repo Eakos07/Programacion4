@@ -8,10 +8,10 @@ namespace Consumo_WCF_DAL.Catalogos_Mantenimientos
 {
     public class Cls_Cliente_DAL
     {
-        private int _iId_Cliente, _iId_Tipo_Cliente, _iId_Estado, _iId_Cuenta, _iCodigo_Pais;
+        private Int16 _iId_Cliente, _iId_Tipo_Cliente, _iId_Estado, _iId_Cuenta, _iCodigo_Pais;
         private string _sNombre, _sApellidos, _sEmail;
 
-        public int iCodigo_Pais
+        public short iCodigo_Pais
         {
             get
             {
@@ -24,7 +24,7 @@ namespace Consumo_WCF_DAL.Catalogos_Mantenimientos
             }
         }
 
-        public int iId_Cliente
+        public short iId_Cliente
         {
             get
             {
@@ -37,7 +37,7 @@ namespace Consumo_WCF_DAL.Catalogos_Mantenimientos
             }
         }
 
-        public int iId_Cuenta
+        public short iId_Cuenta
         {
             get
             {
@@ -50,7 +50,7 @@ namespace Consumo_WCF_DAL.Catalogos_Mantenimientos
             }
         }
 
-        public int iId_Estado
+        public short iId_Estado
         {
             get
             {
@@ -63,7 +63,7 @@ namespace Consumo_WCF_DAL.Catalogos_Mantenimientos
             }
         }
 
-        public int iId_Tipo_Cliente
+        public short iId_Tipo_Cliente
         {
             get
             {

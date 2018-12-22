@@ -22,7 +22,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
             else
             {
-                DT = Obj_Servicio.ListarDatos("SP_FILTRAR_ROL", ref smsError);
+                DT = Obj_Servicio.ListarDatos("SP_LISTAR_ROL", ref smsError);
             }
 
             if (smsError == string.Empty)

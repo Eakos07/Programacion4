@@ -18,11 +18,12 @@
                 </div>
                 <hr />
                 <div class="form-group">
-                    <asp:Button ID="btn_buscar" class="btn boton" Text="Ver todos" runat="server"/>
+                    <asp:Button ID="btn_buscar" class="btn boton" Text="Ver todos" runat="server" OnClick="btn_buscar_Click"/>
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 bg-light">
-                <asp:GridView ID="gvw_estados" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+                <asp:GridView ID="gvw_estados" runat="server" BackColor="White" BorderColor="#336666" 
+                    BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
                     <FooterStyle BackColor="White" ForeColor="#333333" />
                     <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
                     <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
