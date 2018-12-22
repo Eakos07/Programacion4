@@ -13,12 +13,13 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
         public DataTable Listar(string sfiltro, ref string smsError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
+
             DataTable DT = new DataTable();
 
             if (sfiltro.Trim() != string.Empty)
             {
                 DT = Obj_Servicio.FiltrarDatos("SP_FILTRAR_ESTADO", "@Descripcion",
-                    SqlDbType.NVarChar, sfiltro.Trim(), ref smsError);
+                     SqlDbType.NVarChar, sfiltro.Trim(), ref smsError);
             }
             else
             {
@@ -38,6 +39,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
         public bool Insertar( Cls_Estados_DAL Obj_Estados_DAL , ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
+
             DataTable DT = new DataTable();
             string sValorScalar = string.Empty;
 

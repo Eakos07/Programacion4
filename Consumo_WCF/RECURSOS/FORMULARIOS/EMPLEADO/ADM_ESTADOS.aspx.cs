@@ -22,6 +22,7 @@ namespace Consumo_WCF.RECURSOS.FORMULARIOS.EMPLEADO
         protected void btn_agregar_Click(object sender, EventArgs e)
         {
             string sMsjError = string.Empty;
+            ObjDAL.iId_Estado = Convert.ToInt16(txt_ID_estado.Text);
             ObjDAL.sDescripcion = txt_descripcion.Text.Trim();
             ObjBLL.Insertar(ObjDAL, ref sMsjError);
         }

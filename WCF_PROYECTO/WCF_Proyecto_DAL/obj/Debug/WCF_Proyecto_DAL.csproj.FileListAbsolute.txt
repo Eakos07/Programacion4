@@ -18,3 +18,8 @@ C:\Users\usuario\Desktop\Proyecto_Progra4\Para subir\Clase_13_P4\WCF_PROYECTO\WC
 C:\Users\usuario\Desktop\Proyecto_Progra4\Para subir\Clase_13_P4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.csprojResolveAssemblyReference.cache
 C:\Users\usuario\Desktop\Proyecto_Progra4\Para subir\Clase_13_P4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.dll
 C:\Users\usuario\Desktop\Proyecto_Progra4\Para subir\Clase_13_P4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.pdb
+C:\Users\Laboratorio\Source\Repos\Programacion4\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Debug\WCF_Proyecto_DAL.dll
+C:\Users\Laboratorio\Source\Repos\Programacion4\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Debug\WCF_Proyecto_DAL.pdb
+C:\Users\Laboratorio\Source\Repos\Programacion4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Laboratorio\Source\Repos\Programacion4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.dll
+C:\Users\Laboratorio\Source\Repos\Programacion4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.pdb

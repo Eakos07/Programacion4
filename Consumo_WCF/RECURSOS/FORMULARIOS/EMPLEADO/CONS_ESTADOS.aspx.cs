@@ -40,5 +40,11 @@ namespace Consumo_WCF.RECURSOS.FORMULARIOS.EMPLEADO
         {
 
         }
+        protected void txt_id_estado_TextChanged(object sender, EventArgs e)
+        {
+            string sMsjError = string.Empty;
+            gvw_estados.DataSource = ObjBLL.Listar(txt_id_estado.Text, ref sMsjError);
+            gvw_estados.DataBind();
+        }
     }
 }

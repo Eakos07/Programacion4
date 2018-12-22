@@ -29,7 +29,7 @@
             </div>
             <div class="auto-style1">
                 <asp:GridView ID="gvw_estados" runat="server" BackColor="White" BorderColor="#336666" 
-                    BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" ClientIDMode="Static" OnSelectedIndexChanged="gvw_estados_SelectedIndexChanged">
+                    BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" ClientIDMode="Static" OnTextChanged="txt_id_estado_TextChanged">
                     <FooterStyle BackColor="White" ForeColor="#333333" />
                     <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
                     <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
