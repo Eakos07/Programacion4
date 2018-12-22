@@ -27,7 +27,7 @@
             <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-top:0">
                 <ul class="navbar-nav">
                     <li class="navbar-item">
-                        <a class="nav-link" href="../Mantenimientos/Principal.aspx">
+                        <a class="nav-link" href="../EMPLEADO/MENU_MANT.aspx">
                             <img src="../../IMAGENES/Logo.png" width="85" height="30" class="d-lg-inline-block align-top " alt="Inicio"/>
                         </a>
                     </li>

@@ -13,19 +13,32 @@ namespace Consumo_WCF.RECURSOS.FORMULARIOS.EMPLEADO
 
     public partial class CONS_ESTADOS : System.Web.UI.Page
     {
-        Cls_Estados_BLL Obj_Estados_BLL = new Cls_Estados_BLL();
+        Cls_Estados_BLL ObjBLL = new Cls_Estados_BLL();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             string sMsjError = string.Empty;
-            gvw_estados.DataSource = Obj_Estados_BLL.Listar(txt_id_estado.Text, ref sMsjError);
+            gvw_estados.DataSource = ObjBLL.Listar(txt_id_estado.Text, ref sMsjError);
             gvw_estados.DataBind();
         }
 
         protected void btn_filtrar_Click(object sender, EventArgs e)
         {
-            
+            string sMsjError = string.Empty;
+            gvw_estados.DataSource = ObjBLL.Listar(txt_id_estado.Text, ref sMsjError);
+            gvw_estados.DataBind();
         }
-        
+
+        protected void btn_buscar_Click(object sender, EventArgs e)
+        {
+            string sMsjError = string.Empty;
+            gvw_estados.DataSource = ObjBLL.Listar(txt_id_estado.Text, ref sMsjError);
+            gvw_estados.DataBind();
+        }
+
+        protected void gvw_estados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

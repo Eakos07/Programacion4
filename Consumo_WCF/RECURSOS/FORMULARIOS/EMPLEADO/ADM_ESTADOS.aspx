@@ -17,13 +17,13 @@
             </div>
             <hr />
             <div class="form-group">
-                 <asp:Button ID="btn_agregar" class="btn boton" Text="Agregar" runat="server"/>
+                 <asp:Button ID="btn_agregar" class="btn boton" Text="Agregar" runat="server" OnClick="btn_agregar_Click"/>
             </div>
             <div class="form-group">
                  <asp:Button ID="btn_actualizar" class="btn boton" Text="Actualizar" runat="server"/>
             </div>
             <div class="form-group">
-                 <asp:Button ID="btn_eliminar" class="btn boton" Text="Eliminar" runat="server"/>
+                 <asp:Button ID="btn_eliminar" class="btn boton" Text="Eliminar" runat="server" OnClick="btn_eliminar_Click"/>
             </div>
     </div>
 </asp:Content>

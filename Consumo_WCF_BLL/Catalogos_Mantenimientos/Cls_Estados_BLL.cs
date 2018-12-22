@@ -9,6 +9,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
 {
     public class Cls_Estados_BLL
     {
+
         public DataTable Listar(string sfiltro, ref string smsError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
@@ -34,7 +35,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Insertar(string sFiltro, Cls_Estados_DAL Obj_Estados_DAL , ref string sMsjError)
+        public bool Insertar( Cls_Estados_DAL Obj_Estados_DAL , ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();
@@ -51,8 +52,8 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             dtParametros.Rows.Add("@Id_Estado", "1", Obj_Estados_DAL.iId_Estado);
             dtParametros.Rows.Add("@Descripcion", "3", Obj_Estados_DAL.sDescripcion);
 
-            Obj_Servicio.Inserta_DatosSinIdentity("SP_INSERTAR_ESTADO", dtParametros, 
-                                                  ref sMsjError);
+            Obj_Servicio.InsertaDatosConIdentity("SP_INSERTAR_ESTADO", dtParametros,
+                                                 ref sValorScalar, ref sMsjError);
 
             if (sMsjError == string.Empty)
             {
@@ -95,7 +96,7 @@ namespace Consumo_WCF_BLL.Catalogos_Mantenimientos
             }
         }
 
-        public bool Eliminar(string sFiltro, Cls_Estados_DAL Obj_Estados_DAL, ref string sMsjError)
+        public bool Eliminar(Cls_Estados_DAL Obj_Estados_DAL, ref string sMsjError)
         {
             SVC.BDClient Obj_Servicio = new SVC.BDClient();
             DataTable DT = new DataTable();

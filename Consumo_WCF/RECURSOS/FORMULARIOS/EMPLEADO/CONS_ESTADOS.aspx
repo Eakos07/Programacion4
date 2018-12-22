@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RECURSOS/FORMULARIOS/EMPLEADO/EMPLEADO.Master" AutoEventWireup="true" CodeBehind="CONS_ESTADOS.aspx.cs" Inherits="Consumo_WCF.RECURSOS.FORMULARIOS.EMPLEADO.CONS_ESTADOS" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+    .auto-style1 {
+        left: -1px;
+        top: 0px;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
@@ -18,12 +24,12 @@
                 </div>
                 <hr />
                 <div class="form-group">
-                    <asp:Button ID="btn_buscar" class="btn boton" Text="Ver todos" runat="server" />
+                    <asp:Button ID="btn_buscar" class="btn boton" Text="Ver todos" runat="server" OnClick="btn_buscar_Click" />
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 bg-light">
+            <div class="auto-style1">
                 <asp:GridView ID="gvw_estados" runat="server" BackColor="White" BorderColor="#336666" 
-                    BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+                    BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" ClientIDMode="Static" OnSelectedIndexChanged="gvw_estados_SelectedIndexChanged">
                     <FooterStyle BackColor="White" ForeColor="#333333" />
                     <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
                     <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />

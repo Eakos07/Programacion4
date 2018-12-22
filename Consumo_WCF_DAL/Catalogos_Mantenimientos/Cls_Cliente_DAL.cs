@@ -61,7 +61,7 @@ namespace Consumo_WCF_DAL.Catalogos_Mantenimientos
             {
                 _iId_Estado = value;
             }
-        }
+        } 
 
         public short iId_Tipo_Cliente
         {
