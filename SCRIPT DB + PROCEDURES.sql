@@ -1419,10 +1419,10 @@ GO
 CREATE PROCEDURE SP_LISTAR_TIPO_CLIENTE
 AS
 SELECT
-	[Id_Tipo_Cliente]
+	[Id_Tipo_Cliente] AS [Id Tipo Cliente],
 	[Nombre],
 	[Descripcion],
-	[Id_Estado]
+	[Id_Estado] AS [Estado]
 FROM [Sch_General].[T_Tipo_Cliente]
 GO
 
@@ -1430,10 +1430,10 @@ GO
 CREATE PROCEDURE SP_LISTAR_TIPO_EMPLEADO
 AS
 SELECT
-	[Id_Tipo_Empleado]
+	[Id_Tipo_Empleado] [Id Tipo Empleado],
 	[Nombre],
 	[Descripcion],
-	[Id_Estado]
+	[Id_Estado] AS [Estado]
 
 FROM [Sch_General].[T_Tipo_Empleado]
 GO
@@ -1442,9 +1442,9 @@ GO
 CREATE PROCEDURE SP_LISTAR_TIPO_PAGO
 AS 
 SELECT
-	[Id_Tipo_Pago]
+	[Id_Tipo_Pago] AS [Id Tipo Pago],
 	[Nombre_Tipo_Pago],
-	[Id_Estado]  
+	[Id_Estado]  AS [Estado]
 FROM [Sch_General].[T_Tipo_Pago]
 GO
 
@@ -1452,11 +1452,11 @@ GO
 CREATE PROCEDURE SP_LISTAR_INVENTARIO
 AS 
 SELECT
-	[Id_Inventario]
+	[Id_Inventario]AS [Id Inventario],
 	[Nombre_Inventario],
 	[Cantidad],
-	[Id_Estado],
-	[Id_Empleado]
+	[Id_Estado] AS [Estado],
+	[Id_Empleado] AS [Empleado]
 FROM [Sch_Administrativo].[T_Inventario]
 GO
 
@@ -1464,20 +1464,21 @@ GO
 CREATE PROCEDURE SP_LISTAR_PROVEEDOR
 AS
 SELECT
-	[Id_Proveedor]
-	[Nombre_Proveedor],
+	[Id_Proveedor] AS [Id Proveedor],
+	[Nombre_Proveedor] AS [Nombre],
 	[Descripcion],
-	[Id_Estado] 
+	[Id_Estado] AS [Estado]
+
 FROM  [Sch_Administrativo].[T_Proveedor]
 GO
 
 CREATE PROCEDURE SP_LISTAR_ROL
 AS 
 SELECT 
-	[Id_Rol]
+	[Id_Rol] AS [Id Rol],
 	[Nombre],
 	[Descripcion],
-	[Id_Estado]
+	[Id_Estado] AS [Estado]
 FROM[Sch_Administrativo].[T_Rol]
 GO
 
@@ -1486,7 +1487,7 @@ CREATE PROCEDURE SP_LISTAR_ESTADO
 AS
 
 SELECT
-	[Id_Estado]
+	[Id_Estado] AS [Id Estado],
 	[Descripcion]
 
 FROM [Sch_General].[T_Estados]
@@ -1498,10 +1499,10 @@ AS
 
 SELECT
 
-	[Id_Moneda],
+	[Id_Moneda] AS [Id Moneda],
 	[Nombre],
-	[Id_Estado],
-	[Codigo_Pais]
+	[Id_Estado] AS [Estado],
+	[Codigo_Pais] AS [Codigo del País]
 
 FROM [Sch_General].[T_Moneda]
 GO
@@ -1511,9 +1512,9 @@ CREATE PROCEDURE SP_LISTAR_PAIS
 AS
 
 SELECT
-	[Codigo_Pais],
+	[Codigo_Pais] AS [Codigo del País],
 	[Nombre],
-	[Id_Estado]
+	[Id_Estado] AS [Estado]
 
 FROM [Sch_General].[T_Pais]
 GO
@@ -1523,11 +1524,11 @@ CREATE PROCEDURE SP_LISTAR_ARTICULO
 AS
 
 SELECT
-	[Id_Articulo],
+	[Id_Articulo] AS [Id Articulo],
 	[Nombre],
-	[Id_Estado],
-	[Id_Proveedor],
-	[Id_Categoria]
+	[Id_Estado] AS [Estado],
+	[Id_Proveedor] AS [Proveedor] ,
+	[Id_Categoria] AS [Categoria]
 
 FROM [Sch_General].[T_Articulo]
 GO
@@ -1537,12 +1538,12 @@ CREATE PROCEDURE SP_LISTAR_CATEGORIA
 AS
 
 SELECT
-	[Id_Categoria],
+	[Id_Categoria] AS [Id Categoria],
 	[Nombre],
 	[Descripcion],
-	[Id_Estado],
-	[Id_Articulo],
-	[Id_Inventario]
+	[Id_Estado] AS [Estado],
+	[Id_Articulo] AS [Articulo],
+	[Id_Inventario] AS [Inventario]
 
 FROM [Sch_General].[T_Categoria]
 GO
@@ -1552,10 +1553,10 @@ CREATE PROCEDURE SP_LISTAR_DEPARTAMENTO
 AS
 
 SELECT
-	[Id_Departamento],
+	[Id_Departamento] AS [Id Departamento],
 	[Nombre],
 	[Descripcion],
-	[Id_Estado]
+	[Id_Estado] AS [Estado]
 
 FROM [Sch_General].[T_Departamento]
 GO
@@ -1563,28 +1564,29 @@ GO
 CREATE PROCEDURE SP_LISTAR_CLIENTE 
 AS
 SELECT 
-	[Id_Cliente],
+	[Id_Cliente] AS [Id Cliente],
 	[Nombre],
 	[Apellidos],
 	[Direccion],
 	[Email],
-	[Id_Tipo_Cliente],
-	[Id_Estado],
-	[Id_Cuenta],
-	[Codigo_Pais]
+	[Id_Tipo_Cliente] AS [Tipo Cliente],
+	[Id_Estado] AS [Estado],
+	[Id_Cuenta]AS [Cuenta],
+	[Codigo_Pais] AS [Codigo del País]
+
 FROM [Sch_Administrativo].[T_Cliente]
 GO
 
 CREATE PROCEDURE SP_LISTAR_COMPRAS
 AS
 SELECT
-	[Orden_Compra],
+	[Orden_Compra] AS [Orden de Compra],
 	[Cantidad],
-	[Fecha_Compra],
-	[Id_Estado],
-	[Id_Moneda],
-	[Id_Cliente],
-	[Id_Articulo]
+	[Fecha_Compra] AS [Fecha],
+	[Id_Estado] AS [Estado],
+	[Id_Moneda]AS [Moneda],
+	[Id_Cliente] AS [Cliente],
+	[Id_Articulo] AS [Articulo]
 FROM [Sch_Administrativo].[T_Compras]
 GO
 
@@ -1592,33 +1594,33 @@ GO
 CREATE PROCEDURE SP_LISTAR_CUENTA
 AS
 SELECT 
-	[Id_Cuenta],
+	[Id_Cuenta] AS [Id Cuentas],
 	[Descripcion],
-	[Id_Estado]
+	[Id_Estado] AS [Estado]
 FROM [Sch_Administrativo].[T_Cuenta]
 GO
 
 CREATE PROCEDURE SP_LISTAR_EMPLEADOS
 AS
 SELECT
-      	[Id_Empleado],
+      	[Id_Empleado] AS [Id Empleado],
 		[Nombre],
 		[Apellidos],
-		[Id_Departamento],
-		[Id_Rol],
-		[Id_Estado]
+		[Id_Departamento] AS [Departamento],
+		[Id_Rol] AS [Rol],
+		[Id_Estado] AS [Estado]
 FROM [Sch_Administrativo].[T_Empleados]
 GO
 
 CREATE PROCEDURE SP_LISTAR_FACTURA
 AS
 SELECT  
-	[Numero_Factura],
-	[Monto_Factura],
-	[Fecha_Factura],
-	[Id_Estado],
-	[Id_Tipo_Pago],
-	[Orden_Compra]
+	[Numero_Factura] AS [# Factura],
+	[Monto_Factura] AS [Monto],
+	[Fecha_Factura] AS [Fecha],
+	[Id_Estado] AS [Estado],
+	[Id_Tipo_Pago] AS [Tipo de Pago],
+	[Orden_Compra] AS [Orden de Compra]
 FROM [Sch_Administrativo].[T_Factura]
 GO
 
